@@ -1,0 +1,21 @@
+INSTANCEMETHODS::
+
+subsection:: Extensions by SCDoc
+
+method::radiusH
+Get or set the horizontal radius. Keeps the center point when set.
+
+method::radiusV
+Get or set the vertical radius. Keeps the center point when set.
+
+method::centerTop
+Get or set the center of the top boundary.
+
+method::centerBottom
+Get or set the center of the bottom boundary.
+
+method::leftCenter
+Get or set the center of the left boundary.
+
+method::rightCenter
+Get or set the center of the right boundary.
