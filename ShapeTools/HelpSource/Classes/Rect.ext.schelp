@@ -19,3 +19,33 @@ Get or set the center of the left boundary.
 
 method::rightCenter
 Get or set the center of the right boundary.
+
+Examples::
+
+code::
+
+//setting side center values of a Rect
+
+(
+var count = 0;
+w = Window("", Rect(300,300,300,300)).front;
+u = UserView(w, w.view.bounds).animate_(true).frameRate_(1)
+.drawFunc_{
+	count = count+1;
+
+	x = Rect.aboutPoint(w.view.bounds.center, 3, 3);
+	y = Rect(0,0,60,120);
+
+	a = y.centerBottom_(x.center);
+	b = y.leftCenter_(x.center);
+	c = y.centerTop_(x.center);
+	d = y.rightCenter_(x.center);
+
+	z = [a,b,c,d][count.mod(4)];
+
+	Pen.color_(Color.red).fillOval(x);
+	Pen.color_(Color.white).strokeRect(z).stringCenteredIn(
+		["A", "B", "C", "D"][count.mod(4)], z, Font.default.size_(20), Color.black);
+}
+)
+::
