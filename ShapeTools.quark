@@ -1,7 +1,7 @@
 (
   name: "ShapeTools",
   summary: "A collection of convenience methods for geometry in SuperCollider.",
-  version: "1.3",
+  version: "1.0",
   schelp: "Rect",
   license: "GPL 3 or later",
   copyright: "M. Josiah Sytsma, 2022"
